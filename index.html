@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoping List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="toolbar">
+      <span class="cart material-symbols-outlined"> shopping_cart </span>
+      <span class="count">0</span>
+      <button id="showCart" class="show-cart">Show Cart</button>
+    </div>
+
+    <div class="go-back">
+      <div class="back-link">
+        <span class="material-symbols-outlined"> arrow_back_ios </span>Continue
+        shopping
+      </div>
+      <div class="total-price-box">Total: $<span class="total">0</span></div>
+    </div>
+    <div class="shop-cart">
+      <div>Your shopping cart is empty</div>
+    </div>
+
+    <div class="set-layout">
+      <div id="card-layout">
+        <span class="material-symbols-outlined"> cards </span>
+      </div>
+      <div id="list-layout">
+        <span class="material-symbols-outlined"> view_agenda </span>
+      </div>
+    </div>
+
+    <div class="main"></div>
+  </body>
+</html>
