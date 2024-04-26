@@ -14,7 +14,7 @@ let products = []
 let countCart = 0
 let shoppingArr = []
 let total = 0
-
+main.classList.add('card-layout')
 shoppingCart.classList.add('d-none')
 totalPriceBox.classList.add('d-none')
 goBack.classList.add('d-none')
@@ -49,7 +49,7 @@ function appendProducts(arr) {
     main.innerHTML = ''
     arr.forEach(card => {
         main.innerHTML += `
-            <div class="card">
+            <div class="card-layout card">
                 <img src="${card.image}" alt="">
                 <div class="title">${card.title}</div>
                 <div class="price">${card.price}</div>
@@ -124,4 +124,3 @@ fetch('https://fakestoreapi.com/products')
         products = data
         appendProducts(products)
     })
-

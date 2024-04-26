@@ -185,6 +185,7 @@ body {
 
 .main.card-layout {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
   width: 80%;
